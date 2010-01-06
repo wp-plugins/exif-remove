@@ -33,6 +33,7 @@ This Plugin is working transparently within your WordPress blog.
 There should be a settings menu called "Exif-Remove" where you are able
 to (de)activate the plugin. The upload dialogs (in articles/pages) will
 not be modified by this plugin, so you won't see any difference.
+You may also check your images with http://www.exif-viewer.de/ .
 
 
 == Screenshots ==
