@@ -27,9 +27,12 @@ This plugin uses the removal service of http://www.exif-remove.de .
 
 == Frequently Asked Questions ==
 
-= Were there any questions yet? =
+= How can I check whether this plugin is installed correctly or not? =
 
-No.
+This Plugin is working transparently within your WordPress blog.
+There should be a settings menu called "Exif-Remove" where you are able
+to (de)activate the plugin. The upload dialogs (in articles/pages) will
+not be modified by this plugin, so you won't see any difference.
 
 
 == Screenshots ==
