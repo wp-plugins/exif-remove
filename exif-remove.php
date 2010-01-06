@@ -4,7 +4,7 @@ Plugin Name: Exif-Remove
 Plugin URI: http://www.mynakedgirlfriend.de/wordpress/exif-remove/
 Description: Automatically remove exif data after uploading JPG files
 Author: Thomas Schulte
-Version: 1.0
+Version: 1.1
 Author URI: http://www.mynakedgirlfriend.de
 
 Copyright (C) 2010 Thomas Schulte
@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 $version = get_option('ts_exifremoveupload_version');
 if($version == '') {
-	add_option('ts_exifremoveupload_version','1.0','Version of the plugin Exif-Remove','yes');
+	add_option('ts_exifremoveupload_version','1.1','Version of the plugin Exif-Remove','yes');
 }
 
   
@@ -78,7 +78,7 @@ function ts_exifremoveupload_options(){
 	echo('<p>This plugin does exactly what it says: it will remove Exif data from uploaded images (JPG only). Nothing more, nothing less.</p>');
 	echo('<p>Your file will be modified, there will not be a copy or backup with the original content.</p>');
 	echo('<p>Set the option \'Clean\' to no if you don\'t want to remove Exif information, this way you shouldn\'t deactivate the plugin in case you don\'t want to clean your images for a while.</p>');
-
+	echo('<br>');
 	echo('
 		<h3>Settings</h3>
 		<table class="form-table">
@@ -105,17 +105,10 @@ function ts_exifremoveupload_options(){
 
 
 
-function ts_exifremoveupload_random() {
-        $ran = rand () ;
-        return $ran;
-}
-
-
-
 function ts_exifremoveupload_clean($array) {
 	// $array contains file, url, type
 
-	if ($array['type'] == 'image/jpeg') {
+	if ($array['type'] == 'image/jpeg' || $array['type'] == 'image/jpg') {
 		$ch = curl_init();
 
 		$data = array('inputfile' => "@" . $array['file']);

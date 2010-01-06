@@ -3,8 +3,8 @@ Contributors: CupRacer
 Donate link: http://www.mynakedgirlfriend.de/
 Tags: image, plugin, exif, upload, clean
 Requires at least: 2.9
-Tested up to: 2.9
-Stable tag: 1.0
+Tested up to: 2.9.1
+Stable tag: 1.1
 
 This plugin removes Exif data from uploaded images automatically.
 
@@ -43,6 +43,10 @@ None.
 
 == Changelog ==
 
+= 1.1 =
+* Removed unnecessary code.
+* Checked with WordPress 2.9.1
+
 = 1.0 =
 * This is the initial version.
 
@@ -50,3 +54,4 @@ None.
 
 = 1.0 =
 None.
+
