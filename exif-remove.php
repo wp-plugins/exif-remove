@@ -4,7 +4,7 @@ Plugin Name: Exif-Remove
 Plugin URI: http://www.mynakedgirlfriend.de/wordpress/exif-remove/
 Description: Automatically remove exif data after uploading JPG files
 Author: Thomas Schulte
-Version: 1.1
+Version: 1.2
 Author URI: http://www.mynakedgirlfriend.de
 
 Copyright (C) 2010 Thomas Schulte
@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 $version = get_option('ts_exifremoveupload_version');
 if($version == '') {
-	add_option('ts_exifremoveupload_version','1.1','Version of the plugin Exif-Remove','yes');
+	add_option('ts_exifremoveupload_version','1.2','Version of the plugin Exif-Remove','yes');
 }
 
   
@@ -50,13 +50,6 @@ function ts_exifremoveupload_options(){
 	if(isset($_POST['ts_exifremoveupload_options_update'])) {
 		$yesno = $_POST['yesno'];
     
-/*    // if input is empty or not an integer, use previous setting
-    if ($maxwidth == '' OR ctype_digit(strval($maxwidth)) == FALSE) {
-      $maxwidth = get_option('hz_resizeupload_width');
-    } // if
-    
-    update_option('hz_resizeupload_width',$maxwidth);
-*/    
 		if($yesno == 'yes') {
 			update_option('ts_exifremoveupload_yesno','yes');
 		}else {
@@ -66,9 +59,6 @@ function ts_exifremoveupload_options(){
 		echo('<div id="message" class="updated fade"><p><strong>Your options were saved.</strong></p></div>');
 	}
 
-/*  // get options and show settings form
-  $maxwidth = get_option('hz_resizeupload_width');
-*/
 	$yesno = get_option('ts_exifremoveupload_yesno');
   
 	echo('<div class="wrap">');
