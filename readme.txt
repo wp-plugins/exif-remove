@@ -14,13 +14,13 @@ This plugin removes Exif data from uploaded images automatically.
 The plugin affects the image while it is uploaded. Straight
 after it is uploaded, all Exif data will be removed from the image.
 There is no original image left, nor made a backup.
-This plugin uses the removal service of http://www.exif-remove.de .
+This plugin uses the removal tool of http://www.exif-remove.de .
 
-ATTENTION: This service is intended to save your privacy and 
+ATTENTION: This tool is intended to save your privacy and 
 should not be used for illegal activity like copyright violations. 
-You are allowed to use this service for legal activity only, 
+You are allowed to use this tool for legal activity only, 
 this includes that you must have the explicit permission 
-from the holder of rights to clean a file with this plugin!
+from the holder of rights to clean a file with this tool!
 As of now, to prevent abuse, the eventually existing 
 copyright information will be kept inside the cleaned image.
 To disable this plugin temporarily, just deactivate it within the
