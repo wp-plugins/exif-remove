@@ -4,7 +4,7 @@ Donate link: http://www.mynakedgirlfriend.de/
 Tags: image, plugin, exif, upload, clean
 Requires at least: 2.9
 Tested up to: 2.9.1
-Stable tag: 1.2
+Stable tag: 1.3
 
 This plugin removes Exif data from uploaded images automatically.
 
@@ -15,6 +15,16 @@ The plugin affects the image while it is uploaded. Straight
 after it is uploaded, all Exif data will be removed from the image.
 There is no original image left, nor made a backup.
 This plugin uses the removal service of http://www.exif-remove.de .
+
+ATTENTION: This service is intended to save your privacy and 
+should not be used for illegal activity like copyright violations. 
+You are allowed to use this service for legal activity only, 
+this includes that you must have the explicit permission 
+from the holder of rights to clean a file with this plugin!
+As of now, to prevent abuse, the eventually existing 
+copyright information will be kept inside the cleaned image.
+To disable this plugin temporarily, just deactivate it within the
+Exif-Remove settings menu. Thanks.
 
 
 == Installation ==
@@ -42,6 +52,10 @@ None.
 
 
 == Changelog ==
+
+= 1.3 =
+* Added important information to plugin description.
+* no technical changes.
 
 = 1.2 =
 * Removed some more unnecessary code. :-)

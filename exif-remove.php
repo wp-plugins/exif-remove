@@ -4,7 +4,7 @@ Plugin Name: Exif-Remove
 Plugin URI: http://www.mynakedgirlfriend.de/wordpress/exif-remove/
 Description: Automatically remove exif data after uploading JPG files
 Author: Thomas Schulte
-Version: 1.2
+Version: 1.3
 Author URI: http://www.mynakedgirlfriend.de
 
 Copyright (C) 2010 Thomas Schulte
@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 $version = get_option('ts_exifremoveupload_version');
 if($version == '') {
-	add_option('ts_exifremoveupload_version','1.2','Version of the plugin Exif-Remove','yes');
+	add_option('ts_exifremoveupload_version','1.3','Version of the plugin Exif-Remove','yes');
 }
 
   
